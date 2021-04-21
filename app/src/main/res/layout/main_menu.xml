@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:backgroundTint="@color/fondo">
+
+
+    <Button
+        android:id="@+id/botonCarbohidratos"
+        android:layout_width="232dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="10dp"
+        android:alpha="0"
+        android:onClick="conteoCarbohidratos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/contarCarbView"
+        android:layout_width="292dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/infoAlimentoView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu1" />
+
+    <Button
+        android:id="@+id/botonAlimentos"
+        android:layout_width="232dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="88dp"
+        android:alpha="0"
+        android:onClick="infoAlimentos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonCarbohidratos" />
+
+
+    <ImageView
+        android:id="@+id/infoAlimentoView"
+        android:layout_width="292dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/glucometriasView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonCarbohidratos"
+        app:layout_constraintVertical_bias="0.491"
+        app:srcCompat="@drawable/menu2" />
+
+    <Button
+        android:id="@+id/botonGlucometrias"
+        android:layout_width="232dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="10dp"
+        android:alpha="0"
+        android:onClick="consultarGlucometria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonAlimentos" />
+
+    <ImageView
+        android:id="@+id/glucometriasView"
+        android:layout_width="292dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/tensionView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonAlimentos"
+        app:srcCompat="@drawable/menu3" />
+
+    <Button
+        android:id="@+id/botonTension"
+        android:layout_width="232dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="10dp"
+        android:alpha="0"
+        android:onClick="consultarTension"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonGlucometrias" />
+
+    <ImageView
+        android:id="@+id/tensionView"
+        android:layout_width="292dp"
+        android:layout_height="197dp"
+        android:layout_marginBottom="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonGlucometrias"
+        app:srcCompat="@drawable/menu4"
+        tools:layout_editor_absoluteX="59dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/quejasView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Dudas, quejas o sugerencias?"
+        android:textColor="@color/azulOscuro_botones"
+        app:layout_constraintBottom_toTopOf="@+id/exitView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/exitView"
+        android:layout_width="397dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="36dp"
+        android:scaleX="1.12"
+        android:scaleY="1"
+        app:layout_constraintTop_toBottomOf="@+id/botonTension"
+        app:srcCompat="@drawable/salimenu"
+        tools:layout_editor_absoluteX="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/fotoPerfilView"
+        android:layout_width="84dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/exitView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/nombreUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="NOMBRE USUARIO"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fotoPerfilView" />
+
+    <Button
+        android:id="@+id/botonSalir"
+        android:layout_width="64dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="70dp"
+        android:alpha="0"
+        android:onClick="cerrarSesion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exitView"
+        app:layout_constraintVertical_bias="0.393" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="245dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="588dp"
+        android:alpha="0"
+        android:onClick="navToEditar"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

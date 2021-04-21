@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="combo_cantidad_alimento">
+        <item>Seleccione la porción</item>
+        <item>1 puño/1 taza/240 ml </item>
+        <item>1 palma/2 oz/60 g</item>
+        <item>Toda la mano/1/2 taza/120 ml</item>
+        <item>1 pulgar/1 oz/30 g</item>
+        <item>punta del pulgar/1 cdta./5 ml</item>
+
+    </string-array>
+</resources>
+

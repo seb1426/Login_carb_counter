@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="combo_tipo_diabetes">
+        <item>Seleccione un tipo de diabetes</item>
+        <item>Tipo 1</item>
+        <item>Tipo 2</item>
+        <item>Tipo gestacional</item>
+
+
+    </string-array>
+
+
+
+</resources>
